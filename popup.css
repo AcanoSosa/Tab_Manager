@@ -1,0 +1,147 @@
+body{
+    width:604px;
+    padding:0;
+    margin:0;
+}
+
+.header{
+    height: 58px;
+    max-width:604px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:8px;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left:15px;
+}
+
+.buttons{
+    height:32px;
+    display:flex;
+    flex-direction: row;
+}
+
+.divider{
+    width:100%;
+    height:1px;
+    position:relative;
+    bottom: 0;
+    background-color: #DEDEDE;
+}
+
+/*Collection*/
+.collection{
+    max-width:604px;
+}
+.group{
+    height:42px;
+}
+
+/*Group*/
+.group_header{
+    padding: 4px 8px 4px 16px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.group_actions{
+    display:flex;
+    align-items: center;
+}
+.chevron{
+    margin:0px 10px 0px 0px;
+}
+
+/*Links*/
+.group_links{
+    height: 42px;
+    padding: 0px 8px 0 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.link_info{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+#link_favicon{
+    height: 20px;
+}
+
+.group_name{
+    max-width: 186px;
+    margin:0;
+}
+#link_title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left:15px;
+    color: rgba(0, 0, 0, 0.70);
+}
+
+#link_url{
+    margin-left:15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.37);
+}
+.link-actions{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.close{
+    margin:0px 10px 0px 0px;
+}
+/*Buttons*/
+.button_primary{
+    max-height: 32px;
+    margin-right:8px;
+    padding: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    background-color:#EDEDED;
+    border-radius: 20px;
+    border: 1px solid #D3D3D3;
+}
+
+.button_secondary{
+    max-height: 32px;
+    margin-right:8px;
+    padding: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 20px;
+    border: 1px solid #D3D3D3;
+    background-color: #fff;
+}
+
+.button_terciary{
+    max-height: 32px;
+    margin-right:8px;
+    padding: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: #fff;
+    border: none;
+}
+
+/*Fonts*/
+.group_name{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}

@@ -1,0 +1,58 @@
+{
+    "Collection": [
+        {
+            "index": 0,
+            "GroupName": "Name Name",
+            "links": [
+                {
+                    "index": 0,
+                    "favicon": "https://www.instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico",
+                    "page_title": "Youtube1",
+                    "url": "https://www.youtube.com/"
+                },
+                {
+                    "index": 1,
+                    "favicon": "https://securelatam.classistatic.com/assets/images/es_MX/shortcut-5225d798b2.png",
+                    "page_title": "Youtube1.1",
+                    "url": "https://www.youtube.com/"
+                }
+            ]
+        },
+        {
+            "index": 1,
+            "GroupName": "Name Name2",
+            "links": [
+                {
+                    "index": 0,
+                    "favicon": "https://propiedades.com/assets/16a32f07964da761a73de6e6cec435f893a6656c/margarita/img/favicon.ico",
+                    "page_title": "Youtube2",
+                    "url": "https://www.youtube.com/"
+                },
+                {
+                    "index": 1,
+                    "favicon": "https://www.instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico",
+                    "page_title": "Youtube 2.1",
+                    "url": "https://www.youtube.com/"
+                }
+            ]
+        },
+        {
+            "index": 2,
+            "GroupName": "Name Name3",
+            "links": [
+                {
+                    "index": 0,
+                    "favicon": "https://static.xx.fbcdn.net/rsrc.php/yD/r/d4ZIVX-5C-b.ico",
+                    "page_title": "Youtube 3",
+                    "url": "https://www.youtube.com/"
+                },
+                {
+                    "index": 1,
+                    "favicon": "https://s.pinimg.com/webapp/favicon-54a5b2af.png",
+                    "page_title": "Youtube 3.1",
+                    "url": "https://www.youtube.com/"
+                }
+            ]
+        }
+    ]
+}

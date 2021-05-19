@@ -1,0 +1,187 @@
+<h1>${props.heading}</h1>
+		<ul>
+			${props.todos.map(function (todo) {
+				return `<li>${todo}</li>`;
+			}).join('')}
+		</ul>`;
+
+        console.log(data)
+        let groupCollection = data.map(function (title) {
+            return `
+        <div class="group_header">
+        <p class="group_name" id="group_name">${title.GroupName}</p>
+        <div class="group_actions">
+            <button class="button_terciary">Edit</button>
+            <button class="button_terciary">Open</button>
+            <img class="chevron" src="./assets/chevron-down.png" alt="">
+        </div>
+        </div>
+        <div id="tab_collection"></div>
+        <div class="divider"></div>`;
+        });
+        document.getElementById("group").innerHTML = groupCollection
+
+
+
+
+
+
+
+
+                    console.log (title.links);
+            for (i=0; i< title.links; i++){
+                return `
+                <div class="group_links">
+                <a class="link_info">
+                    <img id="link_favicon" src="${link.favicon}" alt="favicon">
+                    <p id="link_title">${link.page_title}</p>
+                    <p id="link_url">${link.url}</p>
+                </a>
+                <div class="link-actions">
+                    <button class="button_terciary">Open</button>
+                    <img class="close" src="./assets/close.png" alt="">
+                </div>
+                </div>`
+            }
+
+
+
+
+
+
+
+                        console.log(title+index);
+            for (i=0; i<title.links; i++){
+                let template2 = function () {
+                    return `
+                    <div class="group_links">
+                    <a class="link_info">
+                        <img id="link_favicon" src="${titile.link[i].favicon}" alt="favicon">
+                        <p id="link_title">${title.link[i].page_title}</p>
+                        <p id="link_url">${title.link[i].url}</p>
+                    </a>
+                    <div class="link-actions">
+                        <button class="button_terciary">Open</button>
+                        <img class="close" src="./assets/close.png" alt="">
+                    </div>
+                    </div>`
+                };
+                console.log(template2)
+            };
+
+
+
+
+
+
+            let links = title.links;
+            for (let i = 0; i < links.length; i++) {
+
+                `<div class="group_links">
+                <a class="link_info">
+                <img id="link_favicon" src="${links[i].favicon}" alt="favicon">
+                <p id="link_title">${links[i].page_title}</p>
+                <p id="link_url">${links[i].url}</p>
+                </a>
+                <div class="link-actions">
+                <button class="button_terciary">Open</button>
+                <img class="close" src="./assets/close.png" alt="">
+                </div>
+                </div>`
+            };
+
+
+
+
+
+
+            '#'+collectionId+' > .tab_collection'
+
+
+
+
+
+
+
+
+
+            //to open a new tab
+document.getElementsByClassName("link_info"), addEventListener("click", openTab);
+
+function openTab() {
+    chrome.tabs.create({
+        "url": "www.google.com"
+    })
+}    
+
+tabs.create({url:},()=>{})
+
+
+
+
+
+
+
+
+
+
+
+
+//intento de acordión
+var acc = document.getElementsByClassName("collection");
+    setTimeout(() => {
+        for (let z = 0; z < acc.length; z++) {
+            acc[z].getElementsByClassName("drop_down").addEventListener("click", function() {
+              /* Toggle between adding and removing the "active" class,
+              to highlight the button that controls the panel */
+              this.classList.toggle("active");
+              /* Toggle between hiding and showing the active panel */
+              let panel = document.querySelector(".tab_collection");
+              if (panel.style.display === "initial") {
+                panel.style.display = "none";
+              } else {
+                panel.style.display = "block";
+              }
+            });
+          }
+    }, 40);
+
+
+
+
+
+// intento de acordión 2
+var acc = document.getElementsByClassName("drop_down");
+for (let z = 0; z < acc.length; z++) {
+    acc[z].addEventListener("click", function() {
+      /* Toggle between adding and removing the "active" class,
+      to highlight the button that controls the panel */
+      this.classList.toggle("active");
+  
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.querySelector(".tab_collection");
+
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+
+
+
+
+
+  // intento de guardar la info de las tabs. 
+  
+  var tab_info = ``;
+chrome.tabs.onActivated.addListener(tab=>{
+    chrome.tabs.get(tab.tabId, current_tab_info=>{
+        favicon = current_tab_info.favIconUrl;
+        url = current_tab_info.url;
+        pageName = current_tab_info.title;
+        return tab_info = [favicon, url, favicon]
+    });
+});
+console.log(tab_info)
